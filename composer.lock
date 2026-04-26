@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca41bf6d04e6bf816168b187a7119031",
+    "content-hash": "920383f5b434e88ea4d91755ad307824",
     "packages": [
         {
             "name": "brick/math",
@@ -3294,6 +3294,74 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
             "time": "2025-12-14T04:43:48+00:00"
+        },
+        {
+            "name": "shaykhnazar/hikvision-isapi",
+            "version": "v1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Shaykhnazar/hikvision-isapi.git",
+                "reference": "1f9bafbce206881bd64c937b49df9dbd2746e048"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Shaykhnazar/hikvision-isapi/zipball/1f9bafbce206881bd64c937b49df9dbd2746e048",
+                "reference": "1f9bafbce206881bd64c937b49df9dbd2746e048",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^7.8",
+                "illuminate/support": "^11.0|^12.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^9.0|^10.0",
+                "phpunit/phpunit": "^10.5|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "HikvisionIsapi": "Shaykhnazar\\HikvisionIsapi\\Facades\\HikvisionIsapi"
+                    },
+                    "providers": [
+                        "Shaykhnazar\\HikvisionIsapi\\HikvisionIsapiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shaykhnazar\\HikvisionIsapi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shaykhnazar",
+                    "email": "shaykhnazar@gmail.com"
+                }
+            ],
+            "description": "Laravel package for Hikvision ISAPI Face Recognition Terminals integration",
+            "keywords": [
+                "ISAPI",
+                "access-control",
+                "face-recognition",
+                "hikvision",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/Shaykhnazar/hikvision-isapi/issues",
+                "source": "https://github.com/Shaykhnazar/hikvision-isapi/tree/v1.5.4"
+            },
+            "time": "2025-11-05T12:36:42+00:00"
         },
         {
             "name": "symfony/clock",
