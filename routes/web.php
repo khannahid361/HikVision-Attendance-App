@@ -657,4 +657,4 @@ Route::get('/debug-minor-codes', function () {
 
 
 Route::get('attendance-form', [ExcelImportController::class, 'showImportForm'])->name('attendance.form');
-Route::post('attendance-import', [ExcelImportController::class, 'attendanceImport'])->name('attendance.import');
+Route::post('attendance-import', [ExcelImportController::class, 'importCsv'])->name('attendance.import.csv');
